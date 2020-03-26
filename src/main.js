@@ -4,7 +4,12 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import axios from './utils/net'
+
 Vue.config.productionTip = false
+
+Vue.prototype.$axios = axios
+Vue.prototype.$net = axios
 
 /* eslint-disable no-new */
 new Vue({
