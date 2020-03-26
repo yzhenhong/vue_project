@@ -9,9 +9,14 @@ const routes = [
     redirect: '/home'
   },
   {
-    path: '/home',
-    name: 'home',
-    component: () => import('@/components/HelloWorld')
+    path: '/vueX',
+    name: 'vueX',
+    component: () => import('@/views/vuex')
+  },
+  {
+    path: '/swiper',
+    name: 'swiper',
+    component: () => import('@/views/swiper')
   },
 ]
 

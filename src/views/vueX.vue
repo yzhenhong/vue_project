@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    hello
+    vuex
   </div>
 </template>
 
@@ -31,7 +31,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="less" scoped>
   .hello{
     font-size: 24px;
