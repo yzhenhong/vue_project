@@ -14,8 +14,13 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "axios": "^0.19.2",
+    "less": "^3.11.1",
+    "less-loader": "^5.0.0",
+    "vant": "^2.5.7",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vue-wechat-title": "^2.0.5"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -59,6 +64,7 @@
     "portfinder": "^1.0.13",
     "postcss-import": "^11.0.0",
     "postcss-loader": "^2.0.8",
+    "postcss-pxtorem": "^5.1.1",
     "postcss-url": "^7.2.1",
     "rimraf": "^2.6.0",
     "selenium-server": "^3.0.1",

@@ -1,0 +1,35 @@
+html,body,#app {
+  width: 100%;
+  height: 100%;
+}
+*{
+  box-sizing: border-box;
+}
+.page-box {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+  overflow-y: auto;
+  font-size: 12px;
+}
+
+// 1.单行文本溢出
+.sigleTextOverflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: break-all;
+}
+
+.aline-overflow {
+  overflow: hidden;
+  white-space: normal;
+  word-break: break-all;
+}
+
+// 修改toast组件的透明度
+.van-toast{
+  background: rgba(0, 0, 0, 0.5);
+}
