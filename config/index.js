@@ -10,7 +10,17 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      '/v1': { //代理地址
+        target: 'https://crowd-test.xgeeklab.com', //测试环境地址
+        secure: false, // 如果是https接口，需要配置这个参数为true
+        changeOrigin: true, // 如果接口跨域，需要进行这个参数配置为true
+      },
+      '/v2': { //代理地址
+        target: 'https://crowd-test.xgeeklab.com', //测试环境地址
+        changeOrigin: true, // 如果接口跨域，需要进行这个参数配置为true
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
