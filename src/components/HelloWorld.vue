@@ -5,13 +5,28 @@
 </template>
 
 <script>
+import { mapGetters, createNamespacedHelpers } from "vuex"
+const {  mapState, mapActions } = createNamespacedHelpers("user")
+
 export default {
   name: 'HelloWorld',
   data () {
     return {
     }
   },
+  computed: {
+    ...mapState([
+      'phone'
+    ]),
+  },
+   methods: {
+    ...mapActions([
+      'setPhone'
+    ])
+  },
   created () {
+    this.setPhone()
+    console.log(this,this.$store)
   }
 }
 </script>
