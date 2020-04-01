@@ -5,10 +5,6 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '*',
-    redirect: '/home'
-  },
-  {
     path: '/vueX',
     name: 'vueX',
     component: () => import('@/views/vuex')
