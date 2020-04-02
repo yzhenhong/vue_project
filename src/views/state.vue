@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="vuex">
     vuex
   </div>
 </template>
@@ -9,7 +9,7 @@ import { mapGetters, createNamespacedHelpers } from "vuex"
 const {  mapState, mapActions } = createNamespacedHelpers("user")
 
 export default {
-  name: 'HelloWorld',
+  name: 'state',
   data () {
     return {
     }
