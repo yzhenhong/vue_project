@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>延缴申报</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="0医保服务大厅" transform="translate(-682.000000, -721.000000)">
+            <g id="分组-6-copy备份-8" transform="translate(608.000000, 675.000000)">
+                <g id="分组-6-copy">
+                    <g id="icon1-copy" transform="translate(74.000000, 46.000000)">
+                        <g id="编组-2">
+                            <g id="计划书" transform="translate(6.000000, 6.000000)">
+                                <rect id="矩形" stroke="#666666" stroke-width="2.42999994" fill-rule="nonzero" x="-1.21499997" y="-1.21499997" width="51.4299999" height="63.4299999" rx="1.61999996"></rect>
+                                <polygon id="路径" fill="#666666" points="16 9.80823052 18.1068151 8.01258098 23.9150105 14.6919398 29.9255619 8 32 9.82538645 26.6462384 15.7922041 31.7818856 15.7922041 31.7784166 18.5371461 25.2794681 18.5371461 25.2794681 21.2923816 31.7807293 21.2923816 31.7772603 24.0373236 25.2794681 24.0373236 25.2794681 29.9965688 22.4973622 30 22.4973622 24.0373236 16.0065079 24.0373236 16.0065079 21.2923816 22.4973622 21.2923816 22.4973622 18.5360024 16.0065079 18.5360024 16.0065079 15.7910603 21.2022838 15.7910603"></polygon>
+                                <rect id="矩形" fill="#FFFFFF" x="30" y="27" width="36" height="38"></rect>
+                                <polygon id="路径" fill="#666666" fill-rule="nonzero" points="11.3643818 50.2472373 27.3643818 50.2472373 27.3643818 47.5472373 11.3643818 47.5472373"></polygon>
+                                <polygon id="路径" fill="#666666" fill-rule="nonzero" points="11.3643818 39.1373162 32.3643818 39.1373162 32.3643818 36.4373162 11.3643818 36.4373162 11.3643818 39.1354906"></polygon>
+                            </g>
+                            <g id="编组" transform="translate(42.000000, 41.000000)">
+                                <circle id="椭圆形" stroke="#666666" stroke-width="2.24999994" fill="#FFFFFF" cx="13" cy="13" r="13"></circle>
+                                <circle id="椭圆形" fill="#EBEBEB" cx="13" cy="13" r="10"></circle>
+                                <polygon id="矩形-copy-13备份" fill="#666666" points="12 11.5 21 11.5 21 14 12 14"></polygon>
+                                <polygon id="矩形-copy-13备份" fill="#666666" transform="translate(13.250000, 9.500000) rotate(-90.000000) translate(-13.250000, -9.500000) " points="8.75 8.25 17.75 8.25 17.75 10.75 8.75 10.75"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>补缴申请备份</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="0医保服务大厅" transform="translate(-194.000000, -721.000000)">
+            <g id="分组-6-copy备份-5" transform="translate(120.000000, 675.000000)">
+                <g id="分组-6-copy">
+                    <g id="icon1-copy" transform="translate(66.000000, 38.000000)">
+                        <g id="编组">
+                            <path d="M44,76 C61.673112,76 76,61.673112 76,44 C76,35.5318926 72.7107376,27.8320336 67.3401617,22.1083719 C61.5022368,15.8866356 53.2050046,12 44,12 C26.326888,12 12,26.326888 12,44 C12,51.5062022 14.5844393,58.4087763 18.9120189,63.8664235 C21.8384492,67.557037 25.5619902,70.5869082 29.8224883,72.6958835" id="椭圆形" stroke="#666666" stroke-width="2.24999994" fill-rule="nonzero" transform="translate(44.000000, 44.000000) rotate(-60.000000) translate(-44.000000, -44.000000) "></path>
+                            <path d="M35.7619471,14.9565951 C24.1218952,19.1167714 15.7619471,30.5499855 15.7619471,44.0025798 C15.7619471,57.3572846 24.0006734,68.7218908 35.5083691,72.9565951 C28.3444439,66.4305646 24.7624813,56.7638979 24.7624813,43.9565951 C24.7624813,31.1492923 28.4289699,21.4826256 35.7619471,14.9565951 Z" id="椭圆形" fill="#EBEBEB"></path>
+                            <text id="检" font-family="PingFangSC-Regular, PingFang SC" font-size="30.5999992" font-weight="normal" fill="#666666">
+                                <tspan x="29.2888897" y="54.333334">检</tspan>
+                            </text>
+                            <circle id="椭圆形" fill="#666666" cx="69" cy="64" r="2"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

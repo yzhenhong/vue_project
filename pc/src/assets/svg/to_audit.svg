@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>待审核</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="0医保服务大厅" transform="translate(-194.000000, -1326.000000)">
+            <g id="分组-6-copy备份-11" transform="translate(120.000000, 1280.000000)">
+                <g id="分组-6-copy">
+                    <g id="icon1-copy" transform="translate(74.000000, 46.000000)">
+                        <g id="编组">
+                            <rect id="矩形" stroke="#666666" stroke-width="2.42999994" fill-rule="nonzero" x="4.78500003" y="9.78500003" width="62.4299999" height="44.4299999" rx="1.61999996"></rect>
+                            <path d="M9.34999996,13 L29,13 L29,13 L29,51 L9.34999996,51 C8.60441557,51 8,50.3955844 8,49.65 L8,14.35 C8,13.6044156 8.60441557,13 9.34999996,13 Z" id="矩形-copy-10" fill="#EBEBEB"></path>
+                            <rect id="矩形" fill="#666666" x="18" y="31" width="2.5" height="12"></rect>
+                            <rect id="矩形备份-3" fill="#666666" x="51" y="29" width="2.5" height="14"></rect>
+                            <rect id="矩形备份" fill="#666666" x="29" y="24" width="2.5" height="19"></rect>
+                            <rect id="矩形备份-4" fill="#666666" x="35" y="53" width="2.5" height="12"></rect>
+                            <polygon id="矩形备份-5" fill="#666666" transform="translate(36.000000, 65.500000) rotate(-270.000000) translate(-36.000000, -65.500000) " points="34.75 50.25 37.25 50.25 37.25 80.75 34.75 80.75"></polygon>
+                            <rect id="矩形备份-2" fill="#666666" x="40" y="19" width="2.5" height="24"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

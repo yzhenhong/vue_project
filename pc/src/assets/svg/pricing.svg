@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>调价</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="0医保服务大厅" transform="translate(-194.000000, -965.000000)">
+            <g id="分组-6-copy备份-10" transform="translate(120.000000, 919.000000)">
+                <g id="分组-6-copy">
+                    <g id="icon1-copy" transform="translate(74.000000, 46.000000)">
+                        <g id="icon5">
+                            <g id="分组-9" transform="translate(9.600000, 5.600000)">
+                                <rect id="矩形" fill="#EBEBEB" x="0.723287628" y="41.9809499" width="9" height="18.095237"></rect>
+                                <polygon id="矩形-copy-9" fill="#EBEBEB" points="17.3589031 28.2285697 26.9000003 28.2285697 26.9000003 60.0761869 17.3589031 60.0761869"></polygon>
+                                <rect id="矩形" fill="#666666" x="0.723287628" y="41.9809499" width="2.5" height="18.095237"></rect>
+                                <rect id="矩形-copy-9" fill="#666666" x="17.3589031" y="28.2285697" width="2.5" height="31.8476171"></rect>
+                                <rect id="矩形-copy-10" fill="#EBEBEB" x="33.9945185" y="33.2952361" width="9" height="26.7809508"></rect>
+                                <rect id="矩形-copy-10" fill="#666666" x="33.9945185" y="33.2952361" width="2.5" height="26.7809508"></rect>
+                                <rect id="矩形-copy-11" fill="#666666" x="50.630134" y="21.7142844" width="2.5" height="38.3619025"></rect>
+                                <path d="M0.489014373,33.7500863 L16.1687765,12.9403365 C16.5503945,12.4338636 17.242464,12.2779263 17.804415,12.5717939 L32.8799897,20.4554412 C33.4007681,20.7277779 34.0396109,20.6156026 34.4364568,20.1821388 L51.1007005,1.98024636 L51.1007005,1.98024636" id="路径-4" stroke="#666666" stroke-width="2.24999994"></path>
+                                <polyline id="路径-5" stroke="#666666" stroke-width="2.24999994" points="41.1626774 0.585156394 52.1355571 0.585156394 52.1355571 11.1127371"></polyline>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>单位注销</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="0医保服务大厅" transform="translate(-438.000000, -477.000000)">
+            <g id="分组-6-copy备份" transform="translate(364.000000, 431.000000)">
+                <g id="分组-6-copy">
+                    <g id="icon1-copy" transform="translate(74.000000, 46.000000)">
+                        <g id="分组-21">
+                            <path d="M42.125,26.125 L42.125,62.875 L54.875,62.875 L54.875,27.8799998 C54.875,26.9107402 54.0892598,26.125 53.1200002,26.125 L42.125,26.125 Z" id="矩形备份-2" stroke="#666666" stroke-width="2.24999994"></path>
+                            <path d="M9.32499978,64.2749996 L43.0749998,64.2749996 L43.0749998,9.27999947 C43.0749998,8.3107398 42.2892596,7.52499959 41.32,7.52499959 L11.0799997,7.52499959 C10.11074,7.52499959 9.32499978,8.3107398 9.32499978,9.27999947 L9.32499978,64.2749996 Z" id="矩形" stroke="#666666" stroke-width="2.24999994" fill="#FFFFFF"></path>
+                            <rect id="矩形" fill="#666666" x="15.9999996" y="15.7999993" width="7" height="2.5"></rect>
+                            <rect id="矩形备份" fill="#666666" x="30" y="15.7999993" width="7" height="2.5"></rect>
+                            <rect id="矩形-copy-5" fill="#666666" x="15.9999996" y="27.5999993" width="7" height="2.5"></rect>
+                            <rect id="矩形-copy-5备份" fill="#666666" x="30" y="27.5999993" width="7" height="2.5"></rect>
+                            <rect id="矩形-copy-13" fill="#666666" x="15.9999996" y="39.3999993" width="7" height="2.5"></rect>
+                            <rect id="矩形-copy-13备份-2" fill="#666666" x="30" y="39.3999993" width="7" height="2.5"></rect>
+                            <rect id="矩形" fill="#666666" x="2.39999994" y="62.9999983" width="67.1999982" height="2.5"></rect>
+                            <g id="编组" transform="translate(39.000000, 40.000000)">
+                                <circle id="椭圆形" stroke="#666666" stroke-width="2.24999994" fill="#FFFFFF" cx="13" cy="13" r="13"></circle>
+                                <circle id="椭圆形" fill="#EBEBEB" cx="13" cy="13" r="10"></circle>
+                                <polygon id="矩形-copy-13备份" fill="#666666" points="5 12 20.1999995 12 20.1999995 14.5 5 14.5"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
