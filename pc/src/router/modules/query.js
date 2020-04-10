@@ -12,7 +12,7 @@ export default [
       {
         path: 'unitPay',
         name: 'query-unitPay',
-        component: () => import('@/views/query/unitPay'),
+        component: () => import('@/views/query/unit-pay'),
         meta: {
           keepAlive: false,
           table: true,
@@ -22,39 +22,11 @@ export default [
       {
         path: 'individualPay',
         name: 'query-individualPay',
-        component: () => import('@/views/query/individualPay'),
+        component: () => import('@/views/query/individual-pay'),
         meta: {
           keepAlive: false,
           table: true,
           title: '个人缴费明细'
-        }
-      },
-      {
-        path: 'personnelChange',
-        name: 'query-personnelChange',
-        component: () => import('@/views/query/personnelChange'),
-        meta: {
-          keepAlive: false,
-          table: true,
-          title: '人员变更情况查询'
-        }
-      },
-      {
-        path: '/subsidyResult',
-        name: 'query-subsidyResult',
-        component: () => import('@/views/query/SubsidyResult'),
-        meta: {
-          keepAlive: false,
-          title: '生育津贴申领结果'
-        }
-      },
-      {
-        path: '/subsidyDetail',
-        name: 'query-subsidyDetail',
-        component: () => import('@/views/query/SubsidyDetail'),
-        meta: {
-          keepAlive: false,
-          title: '申领信息详情'
         }
       },
     ]

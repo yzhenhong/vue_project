@@ -21,8 +21,6 @@
 <script>
   export default {
     name: 'appMain',
-    created () {
-    }
   }
 </script>
 

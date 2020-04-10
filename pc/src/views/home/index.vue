@@ -42,7 +42,7 @@ export default {
              {
                imgSrc: require("@/assets/svg/subsidies.svg"),
                title: '生育津贴申领',
-               routerName: 'business-protectRegistration',
+               routerName: '',
              },
              {
                imgSrc: require("@/assets/svg/declaration.svg"),
@@ -108,7 +108,7 @@ export default {
              {
                imgSrc: require("@/assets/svg/personnelChange.svg"),
                title: '人员变更情况查询',
-               routerName: '',
+               routerName: 'query-personnelChange',
              },
              {
                imgSrc: require("@/assets/svg/individual_pay.svg"),

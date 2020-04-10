@@ -15,7 +15,7 @@ const defaultMessage = "接口返回错误，请检查重试";
 
 // create an axios instance
 const service = axios.create({
-  // baseURL: process.env.API_URL,
+  baseURL: process.env.API_URL,
   timeout: 15*1000
 });
 

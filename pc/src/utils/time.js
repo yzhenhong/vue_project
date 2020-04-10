@@ -1,3 +1,57 @@
+// 获取点前年月日
+export function getNowFormatDate() {
+  var date = new Date();
+  var seperator1 = "-";
+  var year = date.getFullYear();
+  var month = date.getMonth() + 1;
+  var strDate = date.getDate();
+  if (month >= 1 && month <= 9) {
+    month = "0" + month;
+  }
+  if (strDate >= 0 && strDate <= 9) {
+    strDate = "0" + strDate;
+  }
+  var currentdate = year + seperator1 + month + seperator1 + strDate;
+  return currentdate;
+}
+
+// 时间戳转换为年月日
+export function formatDate(value) {
+  let date = new Date(value);
+  let y = date.getFullYear();
+  let MM = date.getMonth() + 1;
+  MM = MM < 10 ? ('0' + MM) : MM;
+  let d = date.getDate();
+  d = d < 10 ? ('0' + d) : d;
+  let h = date.getHours();
+  h = h < 10 ? ('0' + h) : h;
+  let m = date.getMinutes();
+  m = m < 10 ? ('0' + m) : m;
+  let s = date.getSeconds();
+  s = s < 10 ? ('0' + s) : s;
+  // return y + '-' + MM + '-' + d + ' ' + h + ':' + m + ':' + s;
+  return y + '-' + MM + '-' + d;
+}
+
+// 时间戳转换为年月
+export function formatDateMonth(value) {
+  let date = new Date(value);
+  let y = date.getFullYear();
+  let MM = date.getMonth() + 1;
+  MM = MM < 10 ? ('0' + MM) : MM;
+  let d = date.getDate();
+  d = d < 10 ? ('0' + d) : d;
+  let h = date.getHours();
+  h = h < 10 ? ('0' + h) : h;
+  let m = date.getMinutes();
+  m = m < 10 ? ('0' + m) : m;
+  let s = date.getSeconds();
+  s = s < 10 ? ('0' + s) : s;
+  // return y + '-' + MM + '-' + d + ' ' + h + ':' + m + ':' + s;
+  // return y + '-' + MM + '-' + d;
+  return y + '-' + MM;
+}
+
 // 日期时间格式化
 export function datetimeFormat (time, cFormat) {
   if (arguments.length === 0) {
@@ -129,6 +183,7 @@ export function getDay (num = 0, str = '/') {
 
   return oYear + str + oMoth + str + oDay
 }
+
 
 export function timestamp2str (timestamp) {
   // 以秒为单位
