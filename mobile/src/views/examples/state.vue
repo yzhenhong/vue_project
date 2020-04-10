@@ -16,23 +16,21 @@ export default {
   },
   computed: {
     ...mapState([
-      'phone'
+      'userid'
     ]),
   },
    methods: {
     ...mapActions([
-      'setPhone'
+      'setUserId'
     ])
   },
   created () {
-    this.setPhone()
-    console.log(this,this.$store)
+    // this.$store.dispatch('user/setUserId', 1154545)
+    this.setUserId(123455)
+    console.log(this.$store)
   }
 }
 </script>
 
 <style lang="less" scoped>
-  .hello{
-    font-size: 24px;
-  }
 </style>

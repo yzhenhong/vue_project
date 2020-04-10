@@ -10,25 +10,21 @@ Vue.use(VueRouter)
 const routes = [
   ...examplesRoutes,
   {
-    path: '/helloWorld',
-    name: 'helloWorld',
-    // component: helloWorld
-    component: _import('helloWorld')
-    // component: () => import('@/views/helloWorld')
+    path: '/',
+    name: 'default',
+    redirect: '/home/index',
   },
   {
-    path: '/hello',
-    name: 'hello',
-    // component: hello
-    component: _import('hello')
-    // component: () => import('@/views/hello')
-  },
-  {
-    path: '/world',
-    name: 'world',
-    // component: world
-    component: _import('world')
-    // component: () => import('@/views/world')
+    path: '/home',
+    name: 'home',
+    component: layout,
+    children: [
+      {
+        path: 'index',
+        name: '',
+        component: _import('home/index')
+      }
+    ]
   },
 ]
 

@@ -1,4 +1,4 @@
 const getters = {
-  phone: state => state.user.phone,
+  userid: state => state.user.userid,
 };
 export default getters;

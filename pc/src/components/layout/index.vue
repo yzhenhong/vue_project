@@ -46,6 +46,7 @@
   height: 100%;
   width: 100%;
   padding-top: 80px;
+  padding-bottom: 80px;
 }
 </style>
 

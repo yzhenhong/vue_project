@@ -10,10 +10,10 @@ export default {
 }
 </script>
 
-<style lang="less" lang="less">
+<style scoped lang="less">
   @import './assets/css/common.less';
   @import './assets/css/reset.css';
   #nprogress .bar {
-    background: @blue-color!important; //自定义颜色
+    background: blue!important; //自定义颜色
   }
 </style>

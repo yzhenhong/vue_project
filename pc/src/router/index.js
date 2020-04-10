@@ -5,8 +5,7 @@ import layout from '@/components/layout'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 
-import businessRoutes from './modules/business'
-import queryRoutes from './modules/query'
+import examplesRoutes from './modules/examples'
 
 const _import = require('./_import_' + process.env.NODE_ENV)
 
@@ -14,8 +13,7 @@ Vue.use(Router)
 
 
 export const routes = [
-  ...businessRoutes,
-  ...queryRoutes,
+  ...examplesRoutes,
   {
     path: '/',
     name: 'default',
