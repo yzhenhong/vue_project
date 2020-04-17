@@ -1,6 +1,9 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import getters from './getters';
+import globalState from './state'
+import globalGetters from './getters'
+import globalMutations from './mutations'
+import globalActions from './actions'
 import user from './modules/user';
 
 Vue.use(Vuex);
@@ -9,7 +12,10 @@ const store = new Vuex.Store({
   modules: {
     user
   },
-  getters
+  state: globalState,
+  getters: globalGetters,
+  mutations: globalMutations,
+  actions: globalActions
 });
 
 export default store;

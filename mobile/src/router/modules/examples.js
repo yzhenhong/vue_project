@@ -9,4 +9,14 @@ export default [
     name: 'swiper',
     component: () => import('@/views/examples/swiper'),
   },
+  {
+    path: '/upload',
+    name: 'upload',
+    component: () => import('@/views/examples/upload'),
+  },
+  {
+    path: '/pay',
+    name: 'pay',
+    component: () => import('@/views/examples/pay'),
+  },
 ]

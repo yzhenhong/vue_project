@@ -1,23 +1,85 @@
-/**
- * 获取URL请求参数
- * @param {string} name
- */
-export function getQueryString (name) {
-  let reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i')
-  let url = window.location.href
-  let r = url.substr(url.indexOf('?') + 1).match(reg)
-  if (r != null) return decodeURI(r[2]); return null
+import ajax from '@/utils/ajax';
+import wx from 'weixin-js-sdk';
+// 微信配置信息
+let wxjsconfig = {
+  debug: false,
+  jsApiList: [
+    'checkJsApi',
+    'onMenuShareTimeline',
+    'onMenuShareAppMessage',
+    'onMenuShareQQ',
+    'onMenuShareWeibo',
+    'onMenuShareQZone',
+    'hideMenuItems',
+    'showMenuItems',
+    'hideAllNonBaseMenuItem',
+    'showAllNonBaseMenuItem',
+    'translateVoice',
+    'startRecord',
+    'stopRecord',
+    'onVoiceRecordEnd',
+    'playVoice',
+    'onVoicePlayEnd',
+    'pauseVoice',
+    'stopVoice',
+    'uploadVoice',
+    'downloadVoice',
+    'chooseImage',
+    'previewImage',
+    'uploadImage',
+    'downloadImage',
+    'getNetworkType',
+    'openLocation',
+    'getLocation',
+    'hideOptionMenu',
+    'showOptionMenu',
+    'closeWindow',
+    'scanQRCode',
+    'chooseWXPay',
+    'openProductSpecificView',
+    'addCard',
+    'chooseCard',
+    'openCard'
+  ]
+};
+
+function init(code) {
+  let url = location.href;
+  let postData = {
+    url: url,
+    appId: 'AppId',
+    appSecret: 'Secret',
+  };
+  if (code) {
+    postData.code = code;
+  }
+  return ajax.post(`/api/system/getWxJsConfig`, postData).then((response) => {
+    console.log(response, 'response');
+    if (response.status === 200 && response.data.code === 0) {
+      let data = response.data.data;
+      wxjsconfig.appId = data.appid;
+      wxjsconfig.timestamp = data.timestamp;
+      wxjsconfig.nonceStr = data.noncestr;
+      wxjsconfig.signature = data.signature.toLowerCase();
+      wxjsconfig.access_token = data.access_token;
+      wx.config(wxjsconfig);
+      return {
+        wx: wx,
+        wxconfig: data
+      };
+    }
+  });
 }
 
-export function getOpenId (code) {
-  console.log(code)
-  // sessionStorage.setItem('wxopenid', JSON.stringify('wxopenid'))
+function getOpenIdUrl(url) {
+  let appid = process.env.APPID;
+  let openUrl = `https://open.weixin.qq.com/connect/oauth2/authorize?appid=${appid}&redirect_uri=${url}&response_type=code&scope=snsapi_base&state=drugstore#wechat_redirect`;
+  console.log(openUrl, 'openurl');
+  return openUrl;
 }
 
-// 获取微信code
-export function getOpenIdUrl (url) {
-  let appid = process.env.APPID
-  let redirectUrl = encodeURI(process.env.WEB_HOST + url)
-  let openUrl = `https://open.weixin.qq.com/connect/oauth2/authorize?appid=${appid}&redirect_uri=${redirectUrl}&response_type=code&scope=snsapi_userinfo&state=drugstore#wechat_redirect`
-  return openUrl
-}
+
+export default {
+  init,
+  getOpenIdUrl,
+};
