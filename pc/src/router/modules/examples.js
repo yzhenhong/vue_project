@@ -19,12 +19,39 @@ export default [
         }
       },
       {
+        path: 'dynamic-form-demo',
+        name: 'examples-dynamic-form-demo',
+        component: () => import('@/views/examples/dynamic-form-demo'),
+        meta: {
+          keepAlive: false,
+          title: 'dynamic-form-demo'
+        }
+      },
+      {
+        path: 'dynamic-list-demo',
+        name: 'examples-dynamic-list-demo',
+        component: () => import('@/views/examples/dynamic-list-demo'),
+        meta: {
+          keepAlive: false,
+          title: 'dynamic-list-demo'
+        }
+      },
+      {
+        path: 'dynamic-info-demo',
+        name: 'examples-dynamic-info-demo',
+        component: () => import('@/views/examples/dynamic-info-demo'),
+        meta: {
+          keepAlive: false,
+          title: 'dynamic-info-demo'
+        }
+      },
+      {
         path: 'element-form',
         name: 'examples-element-form',
         component: () => import('@/views/examples/element-form'),
         meta: {
           keepAlive: false,
-          title: 'element-form'
+          title: 'element-list'
         }
       },
       {

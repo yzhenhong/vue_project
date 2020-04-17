@@ -17,7 +17,10 @@ const routes = [
   {
     path: '/home',
     name: 'home',
-    component: layout,
+    redirect: '/home/index',
+    component: {
+      template: '<router-view />'
+    },
     children: [
       {
         path: 'index',
