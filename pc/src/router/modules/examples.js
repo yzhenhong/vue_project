@@ -72,6 +72,24 @@ export default [
           title: 'vue-easytable'
         }
       },
+      {
+        path: 'map',
+        name: 'examples-map',
+        component: () => import('@/views/examples/map'),
+        meta: {
+          keepAlive: false,
+          title: 'map'
+        }
+      },
+      {
+        path: 'iframe',
+        name: 'examples-iframe',
+        component: () => import('@/views/examples/iframe'),
+        meta: {
+          keepAlive: false,
+          title: 'iframe'
+        }
+      },
     ]
   }
 ]

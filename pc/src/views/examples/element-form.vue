@@ -136,6 +136,7 @@ export default {
         nation: '',
         birthday: '',
         standardOfCulture: '',
+        salary: '',
       },
       rules: {
         'name': [
@@ -193,6 +194,8 @@ export default {
     },
     onCancel () {
       console.log('onCancel')
+      this.$refs['formData'].resetFields();
+      parent.window.closeDialog(1);
       // this.$router.go(-1);
     },
   },
