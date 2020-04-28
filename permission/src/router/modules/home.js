@@ -11,10 +11,10 @@ const  homeRouterMap = [
     component: layout,
     children: [
       {
-        path: 'index',
+        path: '/home/index',
         name: 'index',
         meta: {
-          title: 'home-index',
+          title: '首页',
           show: true,
         },
         component: () => import('@/views/home/index'),

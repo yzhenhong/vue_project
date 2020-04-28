@@ -39,18 +39,26 @@ export function createRoute(data) {
 
 function getAdminRoute() {
   let permissions = [];
-  permissions.push({
-    name: 'home',
-    routers: homeRouterMap
-  });
-  permissions.push({
-    name: 'monitoring',
-    routers: monitoringRouterMap
-  });
-  permissions.push({
-    name: 'management',
-    routers: managementRouterMap
-  });
+  let routers = [
+    {
+      name: 'home',
+      title: '首页',
+      routers: homeRouterMap
+    },
+    {
+      name: 'monitoring',
+      title: '运行监测',
+      routers: monitoringRouterMap
+    },
+    {
+      name: 'management',
+      title: '渠道管理',
+      routers: managementRouterMap
+    }
+  ]
+  routers.forEach(res=>{
+    permissions.push(res.routers)
+  })
   return permissions;
 }
 
@@ -85,7 +93,7 @@ function appendRoute(permissions) {
   for (let index = 0; index < permissions.length; index++) {
     let item = permissions[index];
     try {
-      router.addRoutes(item.routers);
+      router.addRoutes(item);
     } catch (error) {
       console.error(error);
     }
@@ -112,13 +120,8 @@ export function initRoute(registerRouteFresh) {
           name: item.name,
           title: item.title,
         });
-        // if (item.child) {
         let m = createRoute([item]);
-        permissions.push({
-          name: item.name,
-          routers: m
-        });
-        // }
+        permissions.push(m);
       }
       let activeNavName = store.getters.activeNavName;
       let activeNav = navs.find((x) => x.name === activeNavName);

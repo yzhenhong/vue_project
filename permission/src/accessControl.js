@@ -22,7 +22,6 @@ router.beforeEach((to, from, next) => {
   if (token) {
     // has token
     if (whiteList.indexOf(to.path) !== -1) {
-    // if (to.path === '/login') {
       next();
       NProgress.done();
     } else {
