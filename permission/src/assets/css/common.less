@@ -1,0 +1,203 @@
+@import './var.less';
+@import './mixin.less';
+html,body,#app {
+  width: 100%;
+  height: 100%;
+}
+*{
+  box-sizing: border-box;
+}
+.page-box {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+  overflow-y: auto;
+  font-size: 12px;
+}
+
+// 1.单行文本溢出
+.sigleTextOverflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: break-all;
+}
+
+.aline-overflow {
+  overflow: hidden;
+  white-space: normal;
+  word-break: break-all;
+}
+
+.table-app-main .main-wrap{
+  width: 100%;
+  padding: 0px 100px;
+}
+// 表单区
+.form-title{
+  width: 100%;
+  text-align: center;
+  margin: 20px auto;
+  font-family: PingFangSC-Medium;
+  font-size: 24px;
+  color: #333333;
+  line-height: 33px;
+}
+.form-wrap{
+  width: 100%;
+  padding: 30px;
+  padding-top: 50px;
+  background: #FFFFFF;
+  box-shadow: 0 4px 18px 0 rgba(0,0,0,0.06);
+  /deep/.el-form-item {
+    margin-bottom: 30px;
+  }
+  /deep/.el-form-item__label{
+    width: 85px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #333333;
+  }
+  /deep/.el-input__inner {
+    width: 240px;
+  }
+  /deep/.el-button{
+    width: 120px;
+    border-radius: 2px;
+  }
+  .max-input{
+    width: 620px;
+    /deep/.el-input__inner {
+      width: 100%;
+    }
+  }
+  .form-subtitle{
+    margin-bottom: 20px;
+    line-height: 35px;
+    font-family: PingFangSC-Medium;
+    font-size: 18px;
+    color: #333333;
+  }
+  .el-form .form-subtitle{
+    margin-top: 70px;
+  }
+  .form-operation{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+// 搜索条件区
+.search-wrapper {
+  padding:10px 0px;
+  background-color: #fff;
+  /deep/.el-form-item {
+    margin-bottom: 10px;
+  }
+  /deep/.el-input{
+    width: 170px;
+  }
+  /deep/.el-select .el-input,/deep/ .el-date-editor--datetime,/deep/ .el-date-editor {
+    width: 240px;
+  }
+  /deep/.el-button{
+    width: 100px;
+  }
+}
+
+// 列表
+.dynamic-list{
+  // 表格区
+  /deep/.el-table th{
+    background: #F5F5F5;
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+    padding: 0px;
+    height: 50px;
+  }
+  /deep/.el-table td{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #666666;
+    text-align: center;
+    padding: 0px;
+    height: 50px;
+  }
+  // 分页区
+  /deep/.el-pagination{
+    padding: 0px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+// 详情
+.details-title{
+  width: 100%;
+  text-align: center;
+  margin: 20px auto;
+  font-family: PingFangSC-Medium;
+  font-size: 24px;
+  color: #333333;
+  line-height: 33px;
+}
+.details-wrap{
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0 4px 18px 0 rgba(0,0,0,0.06);
+}
+.details-item{
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-left: 60px;
+  border-bottom: 1px solid  #F5F5F5;
+  /deep/.el-row{
+    margin-bottom: 20px;
+    .tips{
+      font-family: PingFangSC-Regular;
+      font-size: 14px;
+      color: #999999;
+    }
+    .txt{
+      font-family: PingFangSC-Regular;
+      font-size: 14px;
+      color: #333333;
+    }
+  }
+  .details-subtitle{
+    font-family: PingFangSC-Medium;
+    font-size: 25px;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  .details-operation{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    .el-button{
+      width: 120px;
+    }
+  }
+}
+.details-item:last-child{
+  border-bottom: none;
+}
+
+
+
+.medium-btn { width: 120px; height: 40px;}
+.small-btn { width: 100px; height: 40px;}
+.mini-btn { width: 80px; height: 40px;}
+.medium-ipt { width: 620px; height: 40px;}
+.small-ipt { width: 240px; height: 40px;}
+.smaller2-ipt { width: 180px; height: 40px;}
+.mini-ipt { width: 120px; height: 40px;}
