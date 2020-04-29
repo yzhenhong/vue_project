@@ -8,7 +8,7 @@
         active-text-color="#fff"
       >
         <template v-for="(item1, index1) in permissions">
-          <template v-if="item1[0].children&&item1[0].children.length>0&&item1[0].meta&&item1[0].meta.show!==false&&item1[0].meta.title=='home'">
+          <template v-if="item1[0].children&&item1[0].children.length>0&&item1[0].meta&&item1[0].meta.show!==false&&item1[0].meta.title=='首页'">
             <!--首页 不需要子菜单 单独展示-->
             <el-menu-item
               :key="index1"
@@ -19,7 +19,7 @@
               <span slot="title">{{item1[0].children[0].meta.title}}</span>
             </el-menu-item>
           </template>
-          <template v-else-if="item1[0].children&&item1[0].children.length>0&&item1[0].meta&&item1[0].meta.show!==false&&item1[0].meta.title!='home'">
+          <template v-else-if="item1[0].children&&item1[0].children.length>0&&item1[0].meta&&item1[0].meta.show!==false&&item1[0].meta.title!='首页'">
             <!--一级菜单 有子菜单-->
             <el-submenu
               :key="index1"

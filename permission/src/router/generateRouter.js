@@ -3,6 +3,9 @@ import router from './index';
 import homeRouterMap from './modules/home';
 import monitoringRouterMap from './modules/monitoring';
 import managementRouterMap from './modules/management';
+import appletRouterMap from './modules/applet';
+import businessRouterMap from './modules/business';
+import systemRouterMap from './modules/system';
 import layout from '@/components/layout'
 const _import = require('./_import_' + process.env.NODE_ENV);
 
@@ -54,7 +57,22 @@ function getAdminRoute() {
       name: 'management',
       title: '渠道管理',
       routers: managementRouterMap
-    }
+    },
+    {
+      name: 'applet',
+      title: '小程序管理',
+      routers: appletRouterMap
+    },
+    {
+      name: 'business',
+      title: '业务管理',
+      routers: businessRouterMap
+    },
+    {
+      name: 'system',
+      title: '系统设置',
+      routers: systemRouterMap
+    },
   ]
   routers.forEach(res=>{
     permissions.push(res.routers)
@@ -81,6 +99,27 @@ function getAdminNavs() {
     {
       name: 'management',
       title: '渠道管理',
+      icon: '',
+      url: '',
+      children: []
+    },
+    {
+      name: 'applet',
+      title: '小程序管理',
+      icon: '',
+      url: '',
+      children: []
+    },
+    {
+      name: 'business',
+      title: '业务管理',
+      icon: '',
+      url: '',
+      children: []
+    },
+    {
+      name: 'system',
+      title: '系统设置',
       icon: '',
       url: '',
       children: []

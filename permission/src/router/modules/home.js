@@ -5,7 +5,7 @@ const  homeRouterMap = [
     path: '/home',
     name: 'home',
     meta: {
-      title: 'home',
+      title: '首页',
       show: true,
     },
     component: layout,
