@@ -101,8 +101,8 @@ function appendRoute(permissions) {
 }
 
 export function initRoute(registerRouteFresh) {
-  let menuList = store.getters.menuList;
   if (process.env.NODE_ENV === 'development') {  // 开发环境下直接展示全部路由
+    console.log('generateRouter-development')
     let navs = getAdminNavs();
     store.dispatch('setNavs', navs);
     let permissions = getAdminRoute();
@@ -111,6 +111,8 @@ export function initRoute(registerRouteFresh) {
     }
     store.dispatch('setPermission', permissions).then(() => {});
   } else {  // 生产环境下展示权限路由
+    console.log('generateRouter-production')
+    let menuList = store.getters.menuList;
     if (menuList && menuList.length > 0) {
       let navs = [];
       let permissions = [];
