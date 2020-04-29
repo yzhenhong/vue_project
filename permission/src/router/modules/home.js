@@ -4,6 +4,7 @@ const  homeRouterMap = [
   {
     path: '/home',
     name: 'home',
+    icon: 'icon-shouye',
     meta: {
       title: '首页',
       show: true,

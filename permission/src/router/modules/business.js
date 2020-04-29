@@ -5,6 +5,7 @@ const  businessRouterMap = [
     path: '/business',
     component: layout,
     name: 'business',
+    icon: 'icon-yewu-tianchong',
     meta: {
       title: '业务管理',
       show: true

@@ -5,6 +5,7 @@ const  appletRouterMap = [
     path: '/applet',
     component: layout,
     name: 'applet',
+    icon: 'icon-xiaochengxu',
     meta: {
       title: '小程序管理',
       show: true

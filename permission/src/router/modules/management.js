@@ -5,6 +5,7 @@ const  managementRouterMap = [
     path: '/management',
     component: layout,
     name: 'management',
+    icon: 'icon-qudao',
     meta: {
       title: '渠道管理',
       show: true

@@ -5,6 +5,7 @@ const monitoringRouterMap = [
     path: '/monitoring',
     component: layout,
     name: 'monitoring',
+    icon: 'icon-jiance',
     meta: {
       title: '运行监测',
       show: true

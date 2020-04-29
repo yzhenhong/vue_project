@@ -16,6 +16,7 @@
               :index="index1.toString()"
               @click="menuClick(item1[0].children[0])"
             >
+              <i class="iconfont" :class="item1[0].icon?item1[0].icon:''"></i>
               <span slot="title">{{item1[0].children[0].meta.title}}</span>
             </el-menu-item>
           </template>
@@ -26,7 +27,7 @@
               :index="index1.toString()"
             >
               <template slot="title">
-                <i></i>
+                <i class="iconfont" :class="item1[0].icon?item1[0].icon:''"></i>
                 <span slot="title">{{item1[0].meta.title}}</span>
               </template>
               <el-menu-item
@@ -47,6 +48,7 @@
               :index="index1.toString()"
               @click="menuClick(item1)"
             >
+              <i class="iconfont" :class="item1[0].icon?item1[0].icon:''"></i>
               <span slot="title">{{item1[0].meta.title}}</span>
             </el-menu-item>
           </template>

@@ -5,6 +5,7 @@ const  systemRouterMap = [
     path: '/system',
     component: layout,
     name: 'system',
+    icon: 'icon-xitongshezhi',
     meta: {
       title: '系统设置',
       show: true
