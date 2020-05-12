@@ -1,6 +1,47 @@
+// 电话验证
+export function validateTel (value) {
+  const integer1 = /^(0|86|17951)?(13[0-9]|15[012356789]|17[01678]|18[0-9]|14[57])[0-9]{8}$/;
+  const integer2 = /^(0[0-9]{2,3}\-)([2-9][0-9]{6,7})+(\-[0-9]{1,4})?$/;
+  return (!integer1.test(value) && !integer2.test(value))
+}
+export const validateTels = (rule, value, callback, msg) => {
+  if (!value) {
+    callback(new Error('请输入电话'))
+  }
+  if (validateTel(value)) {
+    return callback(new Error(msg))
+  }
+  return callback()
+}
+
+/**
+ * 验证身份证号
+ *
+ * @export
+ * @param {*} value
+ * @returns
+ */
+export function validateID (value) {
+  const reg = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/
+  return reg.test(value)
+}
+export const validateIDs = (rule, value, callback) => {
+  if (!value) {
+    callback(new Error('请输入身份证'))
+  }
+  if (!validateID(value)) {
+    return callback(new Error('请输入正确的身份证号码'))
+  }
+  return callback()
+}
+
+
+
+
+
 export function isvalidUsername (str) {
   // 用户名正则，4到16位（字母，数字，点, 下划线，减号）
-  var reg = /^[a-zA-Z0-9._-]{4,16}$/
+  const reg = /^[a-zA-Z0-9._-]{4,16}$/
   return reg.test(str)
 }
 
@@ -34,20 +75,8 @@ export function validateAlphabets (str) {
  * @returns {boolean}
  */
 export function validateEmail (email) {
-  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-  return re.test(email)
-}
-
-/**
- * 验证身份证号
- *
- * @export
- * @param {*} id
- * @returns
- */
-export function validateID (id) {
-  const reg = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/
-  return reg.test(id)
+  const reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  return reg.test(email)
 }
 
 /**

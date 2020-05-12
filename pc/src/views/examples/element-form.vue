@@ -86,6 +86,7 @@
 
 <script>
 import { validateID } from '@/utils/validate'
+import { validateTels } from '@/utils/validate'
 import { nation_list } from '@/global/js/dictionary'
 export default {
   name: 'element-form',
@@ -157,6 +158,9 @@ export default {
         ],
         'standardOfCulture': [
           { required: true, message: '请选择文化程度', trigger: 'change' }
+        ],
+        'workPhone': [
+          { required: true, validator: ((rule, value, callback) => { validateTels(rule, value, callback,'请输入正确的单位电话') }), trigger: 'blur' }
         ],
         'salary': [
           { required: true, message: '请输入工资', trigger: 'blur' },
