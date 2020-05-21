@@ -33,6 +33,7 @@
       :schema="listSchema"
       theme="list"
       @detail-click="carOwnerView"
+      @paymentBaseNew-change ="paymentBaseIuput"
       @fetch-list="fetchList"
       v-model="listData"
     >
@@ -118,11 +119,6 @@ export default {
             props: ['col', 'scope'],
             template:
               '<draggable-image :src="scope.row.img" height="58px" width="58px"></draggable-image>',
-            methods: {
-              handleClick(item) {
-                this.$emit('detail-click', item)
-              }
-            }
           },
           showOverflowTooltip: false,
           'min-width': '50%'
@@ -133,53 +129,47 @@ export default {
           formatter: row => (row.insurance == 1 ? '医疗' : '生育')
         },
         {
+          prop: 'sn',
+          label: '身份证号',
+          formatter: row => (row.sn.replace(/(\d{4})\d{10}(\w{4})/, "$1******$2"))
+        },
+        {
           prop: 'createDate',
           label: '建账年月',
           formatter: row => `${formatDateMonth(Number(row.createDate))}`
         },
-        {
-          prop: 'paymentDate',
-          label: '费款所属年月',
-          formatter: row => `${formatDateMonth(Number(row.paymentDate))}`
-        },
-        {
-          prop: 'paymentBase',
-          label: '缴费基数总额'
-        },
-        {
-          prop: 'actualAmountPaid',
-          label: '实缴总金额'
-        },
-        {
-          prop: 'enterprisePayment',
-          label: '单位实缴总金额'
-        },
-        {
-          prop: 'individualPayment',
-          label: '个人实缴总金额'
-        },
-        {
-          prop: 'payers',
-          label: '缴费人数'
-        },
          {
-          prop: 'paymentType',
-          label: '应缴类型'
+          prop: 'paymentBase',
+          label: '原缴费基数',
+        },
+        {
+          prop: 'paymentBaseNew',
+          label: '新缴费基数',
+          component: {
+              props: ['col', 'scope'],
+              template:
+                '<el-input v-model.trim="scope.row.paymentBaseNew" @change="changeInput(scope.row)"></el-input>',
+              methods: {
+                changeInput(item) {
+                  this.$emit('paymentBaseNew-change', item)
+                }
+              }
+            },
         },
         {
           prop: 'collectionMethod',
           label: '征收方式',
-          // component: {
-          //   props: ['col', 'scope'],
-          //   template:
-          //     '<el-link type="primary" @click.prevent="handleClick(scope)">{{scope.row.collectionMethod}}</el-link>',
-          //   methods: {
-          //     handleClick(item) {
-          //       this.$emit('detail-click', item)
-          //     }
-          //   }
-          // },
-          // 'min-width': '60%'
+          component: {
+            props: ['col', 'scope'],
+            template:
+              '<el-link type="primary" @click.prevent="handleClick(scope)">{{scope.row.collectionMethod}}</el-link>',
+            methods: {
+              handleClick(item) {
+                this.$emit('detail-click', item)
+              }
+            }
+          },
+          'min-width': '60%'
         },
       ],
     }
@@ -194,17 +184,40 @@ export default {
         this.listData.push({
           img: 'http://himg.bdimg.com/sys/portrait/item/8176e79a86e983bde4b88de58f8ae4bda031d5.jpg',
           insurance: '2',
+          sn: '158077212124752000',
           createDate: '1580774752000',
           paymentDate: '1580774752000',
           paymentBase: '1577.44',
-          actualAmountPaid: '1577.44',
-          enterprisePayment: '788.72',
-          individualPayment: '788.72',
-          payers: '60',
-          paymentType: '正常应缴',
           collectionMethod: '税务征收',
         })
       }
+    },
+    paymentBaseIuput (itemVal) {
+      console.log(itemVal)
+      // if(itemVal.paymentBaseNew){
+      //   if(this.listChange<=0){
+      //     this.listChange.push({
+      //       id: itemVal.id,
+      //       paymentBase: itemVal.paymentBaseNew,
+      //     })
+      //   } else {
+      //     let a = this.listChange.filter(item=>{
+      //       return  item.id==itemVal.id
+      //     })
+      //     if(a.length<=0){
+      //       this.listChange.push({
+      //         id: itemVal.id,
+      //         paymentBase: itemVal.paymentBaseNew,
+      //       })
+      //     } else {
+      //       this.listChange.forEach(item=>{
+      //         if(item.id == a[0].id){
+      //           item.paymentBase = itemVal.paymentBaseNew
+      //         }
+      //       })
+      //     }
+      //   }
+      // }
     },
     deleteData(row, column, $index) {
       console.log(row, column, $index);
