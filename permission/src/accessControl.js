@@ -13,7 +13,7 @@ const whiteList = ['/login', '/401', '/404'];
 let registerRouteFresh = true;
 
 if (process.env.NODE_ENV === 'development') {  // 开发环境下无需验证token
-  console.log('accessControl-development')
+  // console.log('accessControl-development')
   router.beforeEach((to, from, next) => {
     NProgress.start();
     if (whiteList.indexOf(to.path) !== -1) {
@@ -31,12 +31,11 @@ if (process.env.NODE_ENV === 'development') {  // 开发环境下无需验证tok
     }
   }); 
 } else {  // 生产环境下需验证token
-  console.log('accessControl-development')
+  // console.log('accessControl-development')
   router.beforeEach((to, from, next) => {
     NProgress.start();
     let token = getToken();
-    if (token) {
-      // has token
+    if (token) {  // has token
       if (whiteList.indexOf(to.path) !== -1) {
         next();
         NProgress.done();
@@ -71,8 +70,7 @@ if (process.env.NODE_ENV === 'development') {  // 开发环境下无需验证tok
           });
         }
       }
-    } else {
-      // has no token
+    } else {  // has no token
       if (whiteList.indexOf(to.path) !== -1) {
         next();
       } else {

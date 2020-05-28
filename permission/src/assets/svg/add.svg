@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>添加</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="40" height="40" rx="2"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="40" height="40" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="医保公共服务管理平台" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="业务管理-服务配置2" transform="translate(-936.000000, -810.000000)">
+            <g id="请填写备份-9" transform="translate(260.000000, 810.000000)">
+                <g id="请选择">
+                    <g id="添加" transform="translate(676.000000, 0.000000)">
+                        <g>
+                            <use id="矩形" stroke="#9EA2A9" mask="url(#mask-2)" stroke-width="2" fill="#FFFFFF" stroke-dasharray="2" xlink:href="#path-1"></use>
+                            <path d="M22,14 L22,20 L28,20 L28,22 L22,22 L22,28 L20,28 L20,22 L14,22 L14,20 L20,20 L20,14 L22,14 Z" id="形状结合" fill="#9EA2A9"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

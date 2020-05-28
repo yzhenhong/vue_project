@@ -17,8 +17,28 @@ const  businessRouterMap = [
         name: 'business-configuration',
         meta: {
           keepAlive: false,
-          title: '渠道配置',
+          title: '业务配置',
           show: true
+        }
+      },
+      {
+        path: '/business/service-configuration',
+        component: () => import('@/views/business/service-configuration'),
+        name: 'service-configuration',
+        meta: {
+          keepAlive: false,
+          title: '服务配置',
+          show: true
+        }
+      },
+      {
+        path: '/business/editor-service',
+        component: () => import('@/views/business/editor-service'),
+        name: 'editor-service',
+        meta: {
+          keepAlive: false,
+          title: '服务配置 > 新增服务',
+          show: false
         }
       },
     ]

@@ -9,6 +9,8 @@ import 'element-ui/lib/theme-chalk/index.css';
 import 'nprogress/nprogress.css'
 import './accessControl';
 
+import '@/global/components'
+
 import App from './App'
 
 

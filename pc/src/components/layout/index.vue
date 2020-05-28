@@ -11,7 +11,7 @@
 
 <script>
   import { appMain, layoutHeader, layoutFooter } from './components'
-  // import redirectConfirmList from '@/redirect-confirm.js';
+  import redirectConfirmList from './getRedirectConfirm';
   export default {
     name: 'layout',
     components: {
@@ -19,24 +19,32 @@
       layoutHeader,
       layoutFooter
     },
-    // beforeRouteLeave (to, from, next) {
-    //   let _self = this;
-    //   let currentRouteName = _self.$route.name;
-    //   let rc = redirectConfirmList.find((x) => x.routeName === currentRouteName);
-    //   if (rc) {
-    //     _self.$confirm(rc.message, '提示', {
-    //       confirmButtonText: '确定',
-    //       cancelButtonText: '取消',
-    //       type: 'warning'
-    //     }).then((res) => {
-    //       next()
-    //     }).catch((err) => {
-    //       this.$router.go(1);
-    //     });
-    //   } else {
-    //     next()
-    //   }
-    // },
+    beforeRouteLeave (to, from, next) {
+      let _self = this;
+      let currentRouteName = _self.$route.name;
+      let rc = redirectConfirmList.find((x) => x.routeName === currentRouteName);
+      // console.log(currentRouteName,rc)
+      if (rc) {
+        if(rc.canReturn) {
+          next()
+          rc.canReturn=false
+        } else {
+          _self.$confirm('离开页面将不保存已编辑的内容，请确认是否离开？', '提示', {
+            confirmButtonText: '确定',
+            cancelButtonText: '取消',
+            type: 'warning'
+          }).then((res) => {
+            rc.canReturn=true
+            next()
+            rc.canReturn=false
+          }).catch((err) => {
+            next(false)
+          });
+        }
+      } else {
+        next()
+      }
+    },
   }
 </script>
 
@@ -46,7 +54,6 @@
   height: 100%;
   width: 100%;
   padding-top: 80px;
-  padding-bottom: 80px;
 }
 </style>
 

@@ -11,12 +11,8 @@
 
 <style scoped lang="less">
 .layout-footer{
-  position: fixed;
-  z-index: 1000;
-  bottom: 0px;
-  left: 0px;
   width: 100%;
-  height: 64px;
+  height: 44px;
   background: #555555;
 }
 </style>

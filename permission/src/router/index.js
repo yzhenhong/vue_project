@@ -7,9 +7,9 @@ Vue.use(Router)
 // 公用路由(iframe中的路由、component!=layout的一级路由)
 export const constantRouterMap = [
   // 通用页面
-  { path: '/login', component: _import('login/login') },
-  { path: '/401', component: _import('error/401') },
-  { path: '/404', component: _import('error/404') },
+  { path: '/login', name: 'login', component: _import('login/login') },
+  { path: '/401', name: '401',component: _import('error/401') },
+  { path: '/404', name: '404',component: _import('error/404') },
   { path: '/',  name: 'default-name', redirect: '/home/index' },
 ];
 

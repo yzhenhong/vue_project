@@ -1,7 +1,7 @@
 <template>
   <div>
+    
     <div class="loginBox">
-      <h2 class="title">医保公共服务管理平台</h2>
       <el-form 
         :model="user"
         ref="formData"
@@ -10,13 +10,14 @@
         class="login-container"
       >
         <el-form-item prop="username">
-          <el-input type="text" v-model="user.username" placeholder="账号" class="inputPassword"></el-input>
+          <el-input type="text" v-model="user.username" placeholder="请输入账号" class="inputPassword"></el-input>
         </el-form-item>
         <el-form-item prop="password">
-          <el-input type="password" v-model="user.password" placeholder="密码" class="inputPassword"></el-input>
+          <el-input type="password" v-model="user.password" placeholder="请输入密码" class="inputPassword"></el-input>
         </el-form-item>
+        <div class="retrievePassword" @click="retrievePassword">找回密码</div>
         <el-form-item style="width:100%;">
-          <el-button type="success" class="login" style="width:100%;" @click="handleSubmit">登录
+          <el-button type="primary" class="login" style="width:100%;" @click="handleSubmit">登录
           </el-button>
         </el-form-item>
       </el-form>
@@ -43,6 +44,9 @@ export default {
     };
   },
   methods: {
+    retrievePassword() {
+
+    },
     handleSubmit () {
       this.$refs['formData'].validate(valid => {
         if (valid) {
@@ -51,6 +55,11 @@ export default {
             this.$router.push('/home/index')
           }).catch(err=>{
             console.log(err)
+            this.$message({
+              showClose: true,
+              message: err.msg,
+              type: 'error'
+            });
           })
         }
       })
@@ -65,6 +74,7 @@ export default {
   height: 300px;
   background-color: #fff;
   padding: 20px;
+  padding-top: 50px;
   position: absolute;
   top: 50%;
   left: 50%;;
@@ -72,11 +82,6 @@ export default {
   margin-left: -220px;
   border: 1px solid #eee;
   border-radius: 5px;
-}
-.title {
-  text-align: center;
-  color: #505458;
-  margin: 0 10px 20px 10px;
 }
 .login-container {
   margin: auto;
@@ -87,5 +92,12 @@ export default {
       border-color: #e7ecee;
     }
   }
+}
+.retrievePassword{
+  height: 40px;
+  color: #409EFF;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 </style>

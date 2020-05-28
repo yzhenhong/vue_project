@@ -1,3 +1,10 @@
+// 单位证照类型
+export const unitCertification_list = [
+  { value: 1, label: '营业执照' },
+  { value: 2, label: '组织机构代码证' },
+  { value: 3, label: '税务登记证' },
+]
+
 export  const nation_list = [
                               '汉族',
                               '蒙古族',

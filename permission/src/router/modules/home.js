@@ -5,11 +5,11 @@ const  homeRouterMap = [
     path: '/home',
     name: 'home',
     icon: 'icon-shouye',
+    component: layout,
     meta: {
       title: '首页',
       show: true,
     },
-    component: layout,
     children: [
       {
         path: '/home/index',
