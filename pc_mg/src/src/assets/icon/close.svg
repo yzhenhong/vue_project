@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>close</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3-3版本管理-弹窗" transform="translate(-623.000000, -88.000000)" fill="#C7C7D4">
+            <g id="编组-5" transform="translate(109.000000, 78.000000)">
+                <g id="关闭" transform="translate(514.000000, 10.000000)">
+                    <g id="close">
+                        <polygon points="12.59615 2.38936965 8.00015 6.98536965 3.40415 2.38936965 2.34315 3.45036965 8.00015 9.10736965 13.65715 3.45036965"></polygon>
+                        <polygon id="close备份" transform="translate(8.000150, 10.391923) scale(1, -1) translate(-8.000150, -10.391923) " points="12.59615 7.03292292 8.00015 11.6289229 3.40415 7.03292292 2.34315 8.09392292 8.00015 13.7509229 13.65715 8.09392292"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,74 @@
+{
+  "name": "pc_manager",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "mockserve": "nodemon ./mock/server/app.js",
+    "svg": "vsvg -s ./src/assets/icon -t ./src/assets/svg-icon",
+    "test:watch": "vue-cli-service test:unit --watch --require  test/setup.js  test/**/*.spec.js",
+    "test": "vue-cli-service test:unit --require  test/setup.js  test/**/*.spec.js",
+    "coverage": "nyc --cmd ./  --reporter=json --reporter=text  npm run test"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "core-js": "^3.6.4",
+    "dayjs": "^1.8.28",
+    "develop-console": "^1.1.3",
+    "element-ui": "^2.13.2",
+    "qs": "^6.9.4",
+    "vue": "^2.6.11",
+    "vue-router": "^3.3.1",
+    "vuedraggable": "^2.23.2",
+    "vuex": "^3.3.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.3.0",
+    "@vue/cli-plugin-eslint": "~4.3.0",
+    "@vue/cli-service": "~4.3.0",
+    "@vue/test-utils": "1.0.3",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "@vue/cli-plugin-unit-mocha": "^4.3.1",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "6.2.2",
+    "less": "^3.11.1",
+    "less-loader": "^6.1.0",
+    "vue-svgicon": "^3.2.6",
+    "vue-template-compiler": "^2.6.11",
+    "koa": "^2.12.0",
+    "koa-router": "^8.0.8",
+    "koa-bodyparser": "^4.3.0",
+    "chalk": "^4.0.0",
+    "koa-compose": "^4.1.0",
+    "glob": "^7.1.6",
+    "nodemon": "^2.0.4",
+    "mockjs": "^1.1.0",
+    "expect": "26.0.1",
+    "mocha": "7.1.2",
+    "istanbul-instrumenter-loader": "^3.0.1",
+    "nyc": "13.0.0",
+    "chai": "4.2.0"
+  },
+  "nyc": {
+    "sourceMap": false,
+    "instrument": false,
+    "extension": [
+      ".vue",
+      ".js"
+    ],
+    "include": [
+      "src/**/*.vue",
+      "src/**/*.js"
+    ],
+    "exclude": [
+      "src/coverage"
+    ]
+  }
+}

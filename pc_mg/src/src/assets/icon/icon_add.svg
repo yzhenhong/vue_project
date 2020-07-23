@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>icon添加</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="开发配置-应用配置" transform="translate(-685.000000, -808.000000)" fill="#3085FF">
+            <g id="应用配置" transform="translate(584.000000, 746.000000)">
+                <g id="添加" transform="translate(101.000000, 58.000000)">
+                    <g id="icon添加" transform="translate(0.000000, 4.000000)">
+                        <g id="编组">
+                            <path d="M10.8,0 L10.8,7.199 L18,7.2 L18,10.8 L10.8,10.799 L10.8,18 L7.2,18 L7.2,10.799 L0,10.8 L0,7.2 L7.2,7.199 L7.2,0 L10.8,0 Z" id="icon添加"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

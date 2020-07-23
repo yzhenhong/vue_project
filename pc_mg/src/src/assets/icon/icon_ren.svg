@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>icon人</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-3.3%" y="-6.4%" width="106.7%" height="112.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="0登录" transform="translate(-650.000000, -365.000000)" fill="#C7C7D4" fill-rule="nonzero">
+            <g id="编组-2" filter="url(#filter-1)" transform="translate(295.000000, 250.000000)">
+                <g id="填写" transform="translate(345.000000, 102.000000)">
+                    <g id="icon人" transform="translate(10.875000, 13.875000)">
+                        <g id="路径">
+                            <path d="M11.2337001,9.53126602 L8.52847592,8.47746882 C8.52847592,8.47746882 8.01194784,8.27863916 7.81183249,8.08190244 C7.6829624,7.95423286 7.6913442,7.65703485 7.80659387,7.27611908 C7.92184353,6.8952033 9.30693508,5.34433196 9.30693508,3.93787374 C9.30693508,1.76330513 7.87469594,0 6.11137593,0 C4.34596046,0 2.91581677,1.76330515 2.91581677,3.93787374 C2.91581677,5.28782248 4.15213146,6.89311036 4.30509921,7.18507602 C4.45701923,7.47808815 4.42034889,7.92283871 4.30090832,8.05783358 C4.11965201,8.2618956 3.45958569,8.4628182 3.45958569,8.4628182 L1.01838803,9.54905603 C0.447378278,9.75207158 0,10.2899581 0,10.8969118 L0,11.1836451 C0,11.8450154 0.536434853,12.25 1.19754889,12.25 L11.0503483,12.25 C11.7114624,12.25 12.25,11.8450154 12.25,11.1825987 L12.25,10.8969118 C12.2520881,10.2899581 11.8036621,9.73742098 11.2337001,9.53231249 L11.2337001,9.53126602 Z"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

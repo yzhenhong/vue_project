@@ -1,0 +1,6 @@
+export * from './version-config'
+export * from './page-setting-api'
+export * from './apps-config-api'
+export * from './mp-info-api'
+export * from './domains-config-api'
+export * from './user'

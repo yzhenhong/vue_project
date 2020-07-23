@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>icon开发平台</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="开发配置-应用配置" transform="translate(-20.000000, -183.000000)" fill="#9EA2A9" fill-rule="nonzero">
+            <g id="一级导航" transform="translate(0.000000, 170.000000)">
+                <g id="icon">
+                    <g transform="translate(20.000000, 13.000000)">
+                        <g id="编组">
+                            <path d="M7.37589594,10.1855588 L11.1252986,10.1855588 L11.1252986,8.68516061 L7.37589594,8.68516061 L7.37589594,10.1855588 Z M2.94000531,5.12370587 L4.81470666,6.99840722 L2.94000531,8.87310857 L4.00079639,9.93389965 L6.93628882,6.99840722 L4.00079639,4.06291479 L2.94000531,5.12370587 Z M2.50039819,1 L11.4996018,1 C12.3278471,1 13,1.67215291 13,2.50039819 L13,11.4996018 C13,12.3278471 12.3278471,13 11.4996018,13 L2.50039819,13 C1.67215291,13 1,12.3278471 1,11.4996018 L1,2.50039819 C1.00159278,1.67056013 1.67215291,1 2.50039819,1 Z" id="形状"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

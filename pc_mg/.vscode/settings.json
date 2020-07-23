@@ -1,0 +1,31 @@
+{
+  "files.exclude": {
+    "documents": true
+  },
+  "eslint.enable": true,
+  "eslint.lintTask.options": "-c ./src/.eslintrc.js --ignore-path ./src/.eslintignore",
+  "eslint.workingDirectories": [
+   "./src" 
+  ],
+   "eslint.format.enable": true,
+     // 自动修复
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+  },
+  // 配置 ESLint 检查的文件类型
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "vue",
+    "html"
+  ],
+  "eslint.options": { //指定vscode的eslint所处理的文件的后缀
+    "extensions": [
+      ".js",
+      ".vue",
+      ".ts",
+      ".tsx"
+    ]
+},
+"python.pythonPath": "/bin/python3"
+}

@@ -1,0 +1,3 @@
+[submodule "documents/std_doc"]
+	path = documents/std_doc
+	url = git@git.code.tencent.com:mp_std_platform/std_doc.git
